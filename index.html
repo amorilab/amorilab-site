@@ -6,7 +6,7 @@
   <title>AMORIlab by W3FDE</title>
   <meta name="description" content="AMORIlab by W3FDE — homelab design, amateur radio, and professional radio communications engineering.">
   <meta name="theme-color" content="#0b0f14">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0f14'/%3E%3Cpath d='M4 20 Q8 8 12 20 T20 20 T28 20' stroke='%23f5a524' stroke-width='2.5' fill='none'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0f14'/%3E%3Cpath d='M4 20 Q8 8 12 20 T20 20 T28 20' stroke='%2339ff88' stroke-width='2.5' fill='none'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -56,18 +56,18 @@
 <span class="c-key">uptime</span>     <span class="c-ok">● all systems nominal</span>
 
 <span class="c-mut">$</span> ls ./services
-proxmox  opnsense  pihole
-grafana  home-assistant  sdr
-aprs-igate  allstar-node<span class="cursor">_</span></code></pre>
+tn-tac-bridge  allstar  echolink
+dmr  ysf  wires-x  nxdn
+p25  hoip<span class="cursor">_</span></code></pre>
         </aside>
       </div>
 
       <div class="wrap">
         <ul class="stats">
-          <li><strong>W3FDE</strong><span>Licensed amateur radio operator</span></li>
-          <li><strong>LMR</strong><span>Radio communications technician</span></li>
+          <li><strong>W3FDE</strong><span>Amateur Extra class operator</span></li>
+          <li><strong>P25 &middot; DMR</strong><span>Radio communications technician</span></li>
           <li><strong>24/7</strong><span>Self-hosted lab infrastructure</span></li>
-          <li><strong>HF&ndash;UHF</strong><span>Operating &amp; experimenting</span></li>
+          <li><strong>Digital</strong><span>Voice, data &amp; linked repeaters</span></li>
         </ul>
       </div>
     </section>
@@ -80,11 +80,11 @@ aprs-igate  allstar-node<span class="cursor">_</span></code></pre>
           <h2>Signal, systems, and a little solder smoke.</h2>
         </div>
         <div class="prose">
-          <p>I'm the operator behind <strong>W3FDE</strong> and the builder behind <strong>AMORIlab</strong>. By day I work as a radio communications technician &mdash; installing, programming, and maintaining the two-way radio systems that people depend on when it matters. After hours, I run a homelab that blends IT infrastructure with RF experimentation.</p>
-          <p>AMORIlab is my design studio for both worlds: virtualization clusters, segmented networks, monitoring stacks, and radio gateways that link the internet to the airwaves. Every build is documented, reproducible, and designed to be reliable &mdash; because that's what the job taught me.</p>
+          <p>I'm the operator behind <strong>W3FDE</strong> and the builder behind <strong>AMORIlab</strong>. By day I work as a radio communications technician on P25 and DMR systems, keeping the radios people depend on working when it matters. I'm also the founder and State Director of the <strong>Tennessee Amateur Radio Association</strong>, a 501(c)(3) nonprofit for amateur radio advocacy and advancement.</p>
+          <p>AMORIlab is my self-hosted sandbox for both worlds: a place to test and build radio programs that move LMR and amateur radio forward. It's also home to the <strong>TN TAC Simplex Node Hub</strong> for AllStarLink.</p>
           <ul class="tags">
             <li>Homelab design</li><li>Networking</li><li>Virtualization</li>
-            <li>Land mobile radio</li><li>Amateur radio</li><li>SDR</li><li>Automation</li>
+            <li>Land mobile radio</li><li>P25</li><li>DMR</li><li>Amateur radio</li><li>Automation</li>
           </ul>
         </div>
       </div>
@@ -103,13 +103,13 @@ aprs-igate  allstar-node<span class="cursor">_</span></code></pre>
               <svg viewBox="0 0 24 24"><path d="M12 13v8M8 21h8M12 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM7.8 15.2a6 6 0 0 1 0-8.4M16.2 6.8a6 6 0 0 1 0 8.4M5 18a10 10 0 0 1 0-14M19 4a10 10 0 0 1 0 14"/></svg>
             </div>
             <h3>Amateur Radio &middot; W3FDE</h3>
-            <p>Licensed ham operator who enjoys the technical side of the hobby as much as the contacts. I build antennas, run digital modes, and bridge radio with networked services in the lab.</p>
+            <p>Amateur Extra class operator who enjoys the technical side of the hobby as much as the contacts. My focus is digital voice and data, and on linking radios and repeaters together over the network.</p>
             <ul class="checklist">
-              <li>HF, VHF &amp; UHF operating</li>
-              <li>Digital modes &mdash; FT8, DMR, APRS</li>
-              <li>Antenna building &amp; tuning</li>
-              <li>Repeater &amp; linking projects (AllStarLink)</li>
-              <li>Emergency &amp; public-service communications</li>
+              <li>Amateur Extra class license</li>
+              <li>Digital modes: DMR, FT8, APRS</li>
+              <li>Repeater systems &amp; internet linking</li>
+              <li>Hotspots &amp; networked nodes (AllStarLink, EchoLink)</li>
+              <li>Bridging RF gear into the homelab</li>
             </ul>
           </article>
 
@@ -118,13 +118,13 @@ aprs-igate  allstar-node<span class="cursor">_</span></code></pre>
               <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9Z"/></svg>
             </div>
             <h3>Radio Communications Technician</h3>
-            <p>Professionally, I keep mission-critical voice and data communications working &mdash; from a single portable on a belt to the repeater on the tower.</p>
+            <p>Professionally, I keep mission-critical digital voice and data communications working on P25 and DMR systems.</p>
             <ul class="checklist">
-              <li>Two-way radio programming &amp; fleet management</li>
-              <li>Mobile &amp; vehicle radio installation</li>
-              <li>Repeater, base station &amp; site maintenance</li>
-              <li>RF testing, alignment &amp; troubleshooting</li>
-              <li>Coverage, interference &amp; antenna system work</li>
+              <li>P25 digital radio systems</li>
+              <li>DMR / MOTOTRBO systems</li>
+              <li>Radio programming &amp; fleet management</li>
+              <li>Infrastructure &amp; repeater maintenance</li>
+              <li>RF testing &amp; troubleshooting</li>
             </ul>
           </article>
         </div>
@@ -135,50 +135,29 @@ aprs-igate  allstar-node<span class="cursor">_</span></code></pre>
     <section id="projects" class="section">
       <div class="wrap">
         <p class="kicker">03 &mdash; Projects</p>
-        <h2>Selected builds.</h2>
-        <p class="section-lede">A sample of what's running, what's on the bench, and what's been documented.</p>
+        <h2>What I've built.</h2>
+        <p class="section-lede">Systems and organizations that connect radio operators across Tennessee and beyond.</p>
 
         <div class="cards cards-3">
           <article class="card project">
-            <span class="status status-live">Live</span>
-            <h3>Proxmox Virtualization Cluster</h3>
-            <p>Multi-node hypervisor cluster hosting the lab's VMs and containers, with shared storage, scheduled backups, and snapshot-based rollbacks.</p>
-            <ul class="stack"><li>Proxmox VE</li><li>LXC</li><li>ZFS</li></ul>
+            <span class="status status-live">Active</span>
+            <h3>TN TAC System</h3>
+            <p>A multi-mode bridge that brings AllStar, EchoLink, DMR, YSF, WIRES-X, NXDN, P25 and HOIP together on one system, so amateurs on different networks and radios can all talk to each other.</p>
+            <ul class="stack"><li>AllStarLink</li><li>EchoLink</li><li>DMR</li><li>YSF</li><li>WIRES-X</li><li>NXDN</li><li>P25</li><li>HOIP</li></ul>
           </article>
 
           <article class="card project">
-            <span class="status status-live">Live</span>
-            <h3>Segmented Lab Network</h3>
-            <p>Firewall-routed network with VLANs separating management, servers, IoT, and radio gear. Local DNS and ad-blocking, secure remote access via VPN.</p>
-            <ul class="stack"><li>OPNsense</li><li>VLANs</li><li>WireGuard</li><li>Pi-hole</li></ul>
+            <span class="status status-live">Founder</span>
+            <h3>Tennessee Amateur Radio Association</h3>
+            <p>Founder and State Director of a 501(c)(3) nonprofit dedicated to the advocacy and advancement of amateur radio in Tennessee.</p>
+            <ul class="stack"><li>501(c)(3) nonprofit</li><li>Advocacy</li><li>Advancement</li><li>Statewide</li></ul>
           </article>
 
           <article class="card project">
-            <span class="status status-live">Live</span>
-            <h3>Observability Stack</h3>
-            <p>Dashboards and alerting for every host, service, and UPS in the rack &mdash; so problems surface before they become outages.</p>
-            <ul class="stack"><li>Grafana</li><li>Prometheus</li><li>Uptime Kuma</li></ul>
-          </article>
-
-          <article class="card project">
-            <span class="status status-live">Live</span>
-            <h3>APRS iGate</h3>
-            <p>Receive-only APRS gateway that hears local packet traffic on 144.390&nbsp;MHz and forwards it to the APRS-IS network.</p>
-            <ul class="stack"><li>Raspberry Pi</li><li>Direwolf</li><li>RTL-SDR</li></ul>
-          </article>
-
-          <article class="card project">
-            <span class="status status-build">In build</span>
-            <h3>AllStarLink Node</h3>
-            <p>Internet-linked repeater node bridging a local RF radio to the AllStarLink network for wide-area ham communications.</p>
-            <ul class="stack"><li>ASL3</li><li>Debian</li><li>URI interface</li></ul>
-          </article>
-
-          <article class="card project">
-            <span class="status status-build">In build</span>
-            <h3>SDR Monitoring Station</h3>
-            <p>Wideband software-defined receiver for spectrum monitoring, signal analysis, and remote listening from anywhere in the lab.</p>
-            <ul class="stack"><li>SDR++</li><li>OpenWebRX</li><li>Docker</li></ul>
+            <span class="status status-live">Active</span>
+            <h3>AMORIlab</h3>
+            <p>A self-hosted sandbox and radio infrastructure lab for testing and building radio programs that move both LMR and amateur radio forward.</p>
+            <ul class="stack"><li>Self-hosted</li><li>Radio infrastructure</li><li>LMR</li><li>Amateur radio</li></ul>
           </article>
         </div>
       </div>
@@ -188,50 +167,51 @@ aprs-igate  allstar-node<span class="cursor">_</span></code></pre>
     <section id="lab" class="section section-alt">
       <div class="wrap">
         <p class="kicker">04 &mdash; Lab Work</p>
-        <h2>How AMORIlab is designed.</h2>
-        <p class="section-lede">Every layer of the lab is planned like a production system &mdash; documented, monitored, and built to recover.</p>
+        <h2>Inside the AMORIlab rack.</h2>
+        <p class="section-lede">One rack running the TN TAC bridge and the LMR and amateur radio test bench, from top to bottom.</p>
 
         <div class="lab-grid">
-          <div class="rack" aria-label="Rack diagram">
-            <div class="rack-title">RACK-01 &middot; 12U</div>
-            <div class="ru"><span class="led ok"></span>Patch panel &middot; Cat6</div>
-            <div class="ru"><span class="led ok"></span>Managed switch &middot; VLAN trunk</div>
-            <div class="ru"><span class="led ok"></span>Firewall / router</div>
-            <div class="ru ru-2"><span class="led ok"></span>Hypervisor node 01</div>
-            <div class="ru ru-2"><span class="led ok"></span>Hypervisor node 02</div>
-            <div class="ru"><span class="led ok"></span>NAS &middot; ZFS storage</div>
-            <div class="ru"><span class="led warn"></span>Radio shelf &middot; SDR / node</div>
+          <div class="rack" aria-label="Rack diagram, top to bottom">
+            <div class="rack-title">RACK-01 &middot; AMORIlab</div>
+            <div class="ru ru-2"><span class="led ok"></span>Systems status screen</div>
+            <div class="ru"><span class="led ok"></span>Yaesu FTM-200DR &middot; HRI-200</div>
+            <div class="ru"><span class="led ok"></span>Motorola CM300</div>
+            <div class="ru"><span class="led ok"></span>MMDVM &middot; P25</div>
+            <div class="ru"><span class="led ok"></span>MMDVM &middot; YSF</div>
+            <div class="ru"><span class="led ok"></span>Power supply unit</div>
+            <div class="ru ru-2"><span class="led ok"></span>Dell PowerEdge T430 &middot; 256&nbsp;GB &middot; 10&nbsp;TB</div>
+            <div class="ru ru-2"><span class="led ok"></span>Motorola XPR&nbsp;8400 &middot; DMR repeater</div>
             <div class="ru"><span class="led ok"></span>UPS &middot; battery backup</div>
           </div>
 
           <ol class="layers">
             <li>
-              <span class="layer-num">L1</span>
-              <div><h3>Power &amp; Physical</h3><p>UPS-backed rack, clean cable management, labeled patching, and proper grounding for RF equipment.</p></div>
+              <span class="layer-num">01</span>
+              <div><h3>Systems Status Screen</h3><p>A live display at the top of the rack showing the health of every system and link at a glance.</p></div>
             </li>
             <li>
-              <span class="layer-num">L2</span>
-              <div><h3>Network</h3><p>Managed switching with VLAN segmentation, firewall policy between zones, and VPN-only remote management.</p></div>
+              <span class="layer-num">02</span>
+              <div><h3>Bridging &amp; Linking Radios</h3><p>A Yaesu FTM-200DR with an HRI-200, a Motorola CM300, and MMDVM P25 and YSF interfaces bridge and link AllStarLink, WIRES-X and YSF for the TN TAC System.</p></div>
             </li>
             <li>
-              <span class="layer-num">L3</span>
-              <div><h3>Compute &amp; Storage</h3><p>Clustered hypervisors, redundant ZFS storage, and automated, tested backups with off-site copies.</p></div>
+              <span class="layer-num">03</span>
+              <div><h3>Dell PowerEdge T430</h3><p>The lab's main server, with 256&nbsp;GB of RAM and 10&nbsp;TB of storage, running the self-hosted bridge software and test environments.</p></div>
             </li>
             <li>
-              <span class="layer-num">L4</span>
-              <div><h3>Services &amp; RF</h3><p>Containerized self-hosted apps alongside radio gateways &mdash; APRS, AllStar, and SDR &mdash; linking the lab to the air.</p></div>
+              <span class="layer-num">04</span>
+              <div><h3>Motorola XPR&nbsp;8400 DMR Repeater</h3><p>A commercial-grade DMR repeater for testing and building radio programs on real LMR hardware.</p></div>
             </li>
             <li>
-              <span class="layer-num">L5</span>
-              <div><h3>Monitoring &amp; Docs</h3><p>Metrics, alerting, and written runbooks for every system, so any build can be rebuilt from scratch.</p></div>
+              <span class="layer-num">05</span>
+              <div><h3>Power &amp; Backup</h3><p>A dedicated power supply for the radio gear and a UPS that keeps the whole rack on the air through outages.</p></div>
             </li>
           </ol>
         </div>
 
         <div class="cards cards-3 services">
-          <div class="card mini"><h3>Homelab design</h3><p>Planning hardware, network topology, and service layout for labs of any size.</p></div>
-          <div class="card mini"><h3>Radio integration</h3><p>Bringing RF gear into networked environments: gateways, nodes, and remote control.</p></div>
-          <div class="card mini"><h3>Documentation</h3><p>Diagrams, runbooks, and build notes that make systems maintainable.</p></div>
+          <div class="card mini"><h3>Multi-mode bridging</h3><p>Linking AllStar, EchoLink, DMR, YSF, WIRES-X, NXDN, P25 and HOIP into the TN TAC System.</p></div>
+          <div class="card mini"><h3>LMR &amp; amateur testing</h3><p>A sandbox for building and testing radio programs on commercial and amateur equipment.</p></div>
+          <div class="card mini"><h3>Always on</h3><p>Self-hosted, monitored and battery-backed so the system stays up for the amateurs who use it.</p></div>
         </div>
       </div>
     </section>
