@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AMORIlab by W3FDE</title>
+  <meta name="description" content="AMORIlab by W3FDE — homelab design, amateur radio, and professional radio communications engineering.">
+  <meta name="theme-color" content="#0b0f14">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0f14'/%3E%3Cpath d='M4 20 Q8 8 12 20 T20 20 T28 20' stroke='%23f5a524' stroke-width='2.5' fill='none'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="AMORIlab home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        AMORI<span class="accent">lab</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span></label>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#radio">Radio</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#lab">Lab Work</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow"><span class="dot"></span> Station W3FDE &middot; on the air</p>
+          <h1>Homelabs engineered like<br><span class="accent">critical comms</span> infrastructure.</h1>
+          <p class="lede">AMORIlab is where I design, build, and document self-hosted infrastructure, RF systems, and network labs &mdash; built with the same discipline I bring to professional two-way radio work.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View projects</a>
+            <a href="#lab" class="btn btn-ghost">Inside the lab</a>
+          </div>
+        </div>
+
+        <aside class="console" aria-label="Station status">
+          <div class="console-head">
+            <span></span><span></span><span></span>
+            <code>w3fde@amorilab:~</code>
+          </div>
+          <pre><code><span class="c-mut">$</span> status --station
+<span class="c-key">callsign</span>   W3FDE
+<span class="c-key">lab</span>        AMORIlab
+<span class="c-key">focus</span>      homelab · RF · LMR
+<span class="c-key">uptime</span>     <span class="c-ok">● all systems nominal</span>
+
+<span class="c-mut">$</span> ls ./services
+proxmox  opnsense  pihole
+grafana  home-assistant  sdr
+aprs-igate  allstar-node<span class="cursor">_</span></code></pre>
+        </aside>
+      </div>
+
+      <div class="wrap">
+        <ul class="stats">
+          <li><strong>W3FDE</strong><span>Licensed amateur radio operator</span></li>
+          <li><strong>LMR</strong><span>Radio communications technician</span></li>
+          <li><strong>24/7</strong><span>Self-hosted lab infrastructure</span></li>
+          <li><strong>HF&ndash;UHF</strong><span>Operating &amp; experimenting</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap two-col">
+        <div>
+          <p class="kicker">01 &mdash; About</p>
+          <h2>Signal, systems, and a little solder smoke.</h2>
+        </div>
+        <div class="prose">
+          <p>I'm the operator behind <strong>W3FDE</strong> and the builder behind <strong>AMORIlab</strong>. By day I work as a radio communications technician &mdash; installing, programming, and maintaining the two-way radio systems that people depend on when it matters. After hours, I run a homelab that blends IT infrastructure with RF experimentation.</p>
+          <p>AMORIlab is my design studio for both worlds: virtualization clusters, segmented networks, monitoring stacks, and radio gateways that link the internet to the airwaves. Every build is documented, reproducible, and designed to be reliable &mdash; because that's what the job taught me.</p>
+          <ul class="tags">
+            <li>Homelab design</li><li>Networking</li><li>Virtualization</li>
+            <li>Land mobile radio</li><li>Amateur radio</li><li>SDR</li><li>Automation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- RADIO -->
+    <section id="radio" class="section section-alt">
+      <div class="wrap">
+        <p class="kicker">02 &mdash; Radio</p>
+        <h2>On the air &amp; on the job.</h2>
+        <p class="section-lede">Radio is both my hobby and my profession. Here's how the two sides fit together.</p>
+
+        <div class="cards cards-2">
+          <article class="card card-feature">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 13v8M8 21h8M12 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM7.8 15.2a6 6 0 0 1 0-8.4M16.2 6.8a6 6 0 0 1 0 8.4M5 18a10 10 0 0 1 0-14M19 4a10 10 0 0 1 0 14"/></svg>
+            </div>
+            <h3>Amateur Radio &middot; W3FDE</h3>
+            <p>Licensed ham operator who enjoys the technical side of the hobby as much as the contacts. I build antennas, run digital modes, and bridge radio with networked services in the lab.</p>
+            <ul class="checklist">
+              <li>HF, VHF &amp; UHF operating</li>
+              <li>Digital modes &mdash; FT8, DMR, APRS</li>
+              <li>Antenna building &amp; tuning</li>
+              <li>Repeater &amp; linking projects (AllStarLink)</li>
+              <li>Emergency &amp; public-service communications</li>
+            </ul>
+          </article>
+
+          <article class="card card-feature">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9Z"/></svg>
+            </div>
+            <h3>Radio Communications Technician</h3>
+            <p>Professionally, I keep mission-critical voice and data communications working &mdash; from a single portable on a belt to the repeater on the tower.</p>
+            <ul class="checklist">
+              <li>Two-way radio programming &amp; fleet management</li>
+              <li>Mobile &amp; vehicle radio installation</li>
+              <li>Repeater, base station &amp; site maintenance</li>
+              <li>RF testing, alignment &amp; troubleshooting</li>
+              <li>Coverage, interference &amp; antenna system work</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <p class="kicker">03 &mdash; Projects</p>
+        <h2>Selected builds.</h2>
+        <p class="section-lede">A sample of what's running, what's on the bench, and what's been documented.</p>
+
+        <div class="cards cards-3">
+          <article class="card project">
+            <span class="status status-live">Live</span>
+            <h3>Proxmox Virtualization Cluster</h3>
+            <p>Multi-node hypervisor cluster hosting the lab's VMs and containers, with shared storage, scheduled backups, and snapshot-based rollbacks.</p>
+            <ul class="stack"><li>Proxmox VE</li><li>LXC</li><li>ZFS</li></ul>
+          </article>
+
+          <article class="card project">
+            <span class="status status-live">Live</span>
+            <h3>Segmented Lab Network</h3>
+            <p>Firewall-routed network with VLANs separating management, servers, IoT, and radio gear. Local DNS and ad-blocking, secure remote access via VPN.</p>
+            <ul class="stack"><li>OPNsense</li><li>VLANs</li><li>WireGuard</li><li>Pi-hole</li></ul>
+          </article>
+
+          <article class="card project">
+            <span class="status status-live">Live</span>
+            <h3>Observability Stack</h3>
+            <p>Dashboards and alerting for every host, service, and UPS in the rack &mdash; so problems surface before they become outages.</p>
+            <ul class="stack"><li>Grafana</li><li>Prometheus</li><li>Uptime Kuma</li></ul>
+          </article>
+
+          <article class="card project">
+            <span class="status status-live">Live</span>
+            <h3>APRS iGate</h3>
+            <p>Receive-only APRS gateway that hears local packet traffic on 144.390&nbsp;MHz and forwards it to the APRS-IS network.</p>
+            <ul class="stack"><li>Raspberry Pi</li><li>Direwolf</li><li>RTL-SDR</li></ul>
+          </article>
+
+          <article class="card project">
+            <span class="status status-build">In build</span>
+            <h3>AllStarLink Node</h3>
+            <p>Internet-linked repeater node bridging a local RF radio to the AllStarLink network for wide-area ham communications.</p>
+            <ul class="stack"><li>ASL3</li><li>Debian</li><li>URI interface</li></ul>
+          </article>
+
+          <article class="card project">
+            <span class="status status-build">In build</span>
+            <h3>SDR Monitoring Station</h3>
+            <p>Wideband software-defined receiver for spectrum monitoring, signal analysis, and remote listening from anywhere in the lab.</p>
+            <ul class="stack"><li>SDR++</li><li>OpenWebRX</li><li>Docker</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAB WORK -->
+    <section id="lab" class="section section-alt">
+      <div class="wrap">
+        <p class="kicker">04 &mdash; Lab Work</p>
+        <h2>How AMORIlab is designed.</h2>
+        <p class="section-lede">Every layer of the lab is planned like a production system &mdash; documented, monitored, and built to recover.</p>
+
+        <div class="lab-grid">
+          <div class="rack" aria-label="Rack diagram">
+            <div class="rack-title">RACK-01 &middot; 12U</div>
+            <div class="ru"><span class="led ok"></span>Patch panel &middot; Cat6</div>
+            <div class="ru"><span class="led ok"></span>Managed switch &middot; VLAN trunk</div>
+            <div class="ru"><span class="led ok"></span>Firewall / router</div>
+            <div class="ru ru-2"><span class="led ok"></span>Hypervisor node 01</div>
+            <div class="ru ru-2"><span class="led ok"></span>Hypervisor node 02</div>
+            <div class="ru"><span class="led ok"></span>NAS &middot; ZFS storage</div>
+            <div class="ru"><span class="led warn"></span>Radio shelf &middot; SDR / node</div>
+            <div class="ru"><span class="led ok"></span>UPS &middot; battery backup</div>
+          </div>
+
+          <ol class="layers">
+            <li>
+              <span class="layer-num">L1</span>
+              <div><h3>Power &amp; Physical</h3><p>UPS-backed rack, clean cable management, labeled patching, and proper grounding for RF equipment.</p></div>
+            </li>
+            <li>
+              <span class="layer-num">L2</span>
+              <div><h3>Network</h3><p>Managed switching with VLAN segmentation, firewall policy between zones, and VPN-only remote management.</p></div>
+            </li>
+            <li>
+              <span class="layer-num">L3</span>
+              <div><h3>Compute &amp; Storage</h3><p>Clustered hypervisors, redundant ZFS storage, and automated, tested backups with off-site copies.</p></div>
+            </li>
+            <li>
+              <span class="layer-num">L4</span>
+              <div><h3>Services &amp; RF</h3><p>Containerized self-hosted apps alongside radio gateways &mdash; APRS, AllStar, and SDR &mdash; linking the lab to the air.</p></div>
+            </li>
+            <li>
+              <span class="layer-num">L5</span>
+              <div><h3>Monitoring &amp; Docs</h3><p>Metrics, alerting, and written runbooks for every system, so any build can be rebuilt from scratch.</p></div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="cards cards-3 services">
+          <div class="card mini"><h3>Homelab design</h3><p>Planning hardware, network topology, and service layout for labs of any size.</p></div>
+          <div class="card mini"><h3>Radio integration</h3><p>Bringing RF gear into networked environments: gateways, nodes, and remote control.</p></div>
+          <div class="card mini"><h3>Documentation</h3><p>Diagrams, runbooks, and build notes that make systems maintainable.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="wrap contact">
+        <p class="kicker">05 &mdash; Contact</p>
+        <h2>Let's make contact.</h2>
+        <p class="section-lede">Questions about a build, a radio project, or just want to swap QSLs? Reach out.</p>
+        <div class="hero-actions center">
+          <a class="btn btn-primary" href="https://github.com/amorilab" target="_blank" rel="noopener">GitHub &middot; amorilab</a>
+          <a class="btn btn-ghost" href="https://www.qrz.com/db/W3FDE" target="_blank" rel="noopener">QRZ &middot; W3FDE</a>
+        </div>
+        <p class="sign-off">73 de W3FDE</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>&copy; <span id="yr">2026</span> AMORIlab by W3FDE</span>
+      <span class="c-mut">Built by hand &middot; HTML &amp; CSS</span>
+    </div>
+  </footer>
+
+</body>
+</html>
